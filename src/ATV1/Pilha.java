@@ -18,6 +18,7 @@ public class Pilha {
 
     public void printStack() {
         No atual = topo;
+        System.out.println("\nPilha de pedidos cancelados:");
         while (atual != null) {
             System.out.println("- " + atual.elemento);
             atual = atual.proximo;

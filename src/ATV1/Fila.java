@@ -29,5 +29,17 @@ public class Fila {
             atual = atual.proximo;
         }
     }
+
+
+    public void atenderPedido() {
+        String atendido = dequeue();
+        if (atendido == null) {
+            System.out.println("\nNenhum pedido pendente para atender.");
+        } else {
+            System.out.println("Pedido atendido:");
+            System.out.println(atendido);
+        }
+    }
+
 }
 
